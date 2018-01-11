@@ -1,0 +1,81 @@
+<html>
+<script type="text/javascript">
+	var jsonLM = [];
+	var count = 1;
+</script>
+<head>
+	<meta charset="UTF-8">
+	<title>Parking System</title>
+	<script type="text/javascript" src="js/func.js"></script>
+	<script type="text/javascript" src="js/ioHandler.js"></script>
+</head>
+<body>
+
+<form method="GET" action="javascript:loadData()">
+<div style="border-style: ridge; margin-left: -250pt; padding: 15pt; width: 500; position: absolute; left: 50%;">
+	<table align="center">
+	<tr>
+	<td align="left">車主: </td>
+	<td align="left"><input type="text" id="userName" name="userName" size="15"> ()</td>
+	</tr>
+	<tr>
+	<td align="left">職稱: </td>
+	<td align="left"><input type="text" id="jobTitle" name="jobTitle" size="15"> ()</td>
+	</tr>
+	<tr>
+	<td align="left">車牌: </td>
+	<td align="left"><input type="text" id="license" name="license" size="15"> ()</td>
+	</tr>
+	<tr>
+	<td align="left">手機: </td>
+	<td align="left"><input type="text" id="cellPhone" name="cellPhone" size="15"> ()</td>
+	</tr>
+	<tr>
+	<td align="left">電話: </td>
+	<td align="left"><input type="text" id="phone" name="phone" size="15"> ()</td>
+	</tr>
+	<tr>
+	<td align="left">期間從: </td>
+	<td align="left"><input type="date" id="date_from" name="date_from" > ()</td>
+	</tr>
+	<tr>
+	<td align="left">至: </td>
+	<td align="left"><input type="date" id="date_end" name="date_end"> ()</td>
+	</tr>
+	<!-- <tr>
+		<td><input type="radio" id="teacherOrNot" name="teacherOrNot" value="Outer">校外人士</input></td>
+		<td><input type="radio" id="teacherOrNot" name="teacherOrNot" value="teacher">教職員工</input></td>
+	</tr> -->
+	
+	<tr>
+		<td colspan="3" style="padding-top: 10pt" align="center">
+			<input type="submit" name="go" value="新增" style="font-size: 12pt; border: outset;">
+			<input type="reset" name="reset" value="重設" style="margin-left: 10pt; font-size: 12pt; border: outset;">			
+		</td>
+	</tr>	
+	</table>	
+</div>
+</form>
+
+<div>
+	<table style="position: relative; top: 250pt;">
+		<tr>
+			<td>目前新增的資料:</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="button" name="SAVE" value="存檔" onclick="saveTextAsFile('DB_data')"></input>	
+				<input id="myfile"  type="file" value="讀取檔案"></input>
+	    		<textarea  id="fileContent" cols="68" rows="10" style="display: none;" ></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td id="view">
+				
+			</td>
+		</tr>
+	</table>
+</div>
+</body>
+	<!-- <script type="text/javascript" src="js/city_area.js"></script> -->
+</html>
