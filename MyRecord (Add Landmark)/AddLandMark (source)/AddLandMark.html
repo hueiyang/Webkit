@@ -1,0 +1,74 @@
+<html>
+<script type="text/javascript">
+	var jsonLM = [];
+	var count = 1;
+</script>
+<head>
+	<meta charset="UTF-8">
+	<title>Add new landmark page</title>
+	<script type="text/javascript" src="js/func.js"></script>
+	<script type="text/javascript" src="js/ioHandler.js"></script>
+</head>
+<body>
+
+<form method="GET" action="javascript:loadData()">
+<div style="border-style: ridge; margin-left: -250pt; padding: 15pt; width: 500; position: absolute; left: 50%;">
+	<table align="center">
+	<tr>
+	<td align="left">LM_Name: </td>
+	<td align="left"><input type="text" id="LM_Name" name="LM_Name" size="15"> (地標名稱)</td>
+	</tr>
+	<tr>
+	<td align="left">LM_GPS_Longitude: </td>
+	<td align="left"><input type="text" id="LM_GPS_Longitude" name="LM_GPS_Longitude" size="15"> (GPS經度)</td>
+	</tr>
+	<tr>
+	<td align="left">LM_GPS_Latitude: </td>
+	<td align="left"><input type="text" id="LM_GPS_Latitude" name="LM_GPS_Latitude" size="15"> (GPS緯度)</td>
+	</tr>
+	<tr align="center">
+	<td colspan="3">
+	<select name="first" id="first" OnChange="Buildkey(this.options[this.selectedIndex].value);">
+		<option Value="--">--選擇縣市--</option>
+	</select>
+	</td>
+	</tr>
+	<tr>
+	<td colspan="3" align="center">
+	<select name="second" id="second">
+		<option Value="--">--選擇區域--</option>
+	</select>
+	</td>
+	</tr>
+	
+	<tr>
+		<td colspan="3" style="padding-top: 10pt" align="center">
+			<input type="submit" name="go" value="新增" style="font-size: 12pt; border: outset;">
+			<input type="reset" name="reset" value="重設" style="margin-left: 10pt; font-size: 12pt; border: outset;">			
+		</td>
+	</tr>	
+	</table>	
+</div>
+</form>
+
+	<table style="position: absolute; top: 180pt;">
+		<tr>
+			<td>目前新增的資料:</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="button" name="SAVE" value="存檔" onclick="saveTextAsFile('DB_data')"></input>	
+				<input id="myfile"  type="file" value="讀取檔案"></input>
+	    		<textarea  id="fileContent" cols="68" rows="10" style="display: none;" ></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td id="view">
+				
+			</td>
+		</tr>
+	</table>
+
+</body>
+	<script type="text/javascript" src="js/city_area.js"></script>
+</html>
