@@ -1,0 +1,285 @@
+<!-- 
+This is a website for tea seller.
+
+@author HY
+@version 0.1.0
+@since 2019-02-22 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>茶行:嘉義民雄好茶莊</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- font awesome icon CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<style type="text/css">
+		.selector-for-some-widget {
+		  box-sizing: content-box;
+		}
+
+		.header-class {
+			min-height: 100vh;
+			background-image: url(https://images.unsplash.com/photo-1521899875873-3f1f7ea68f36?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c405782c0bd90f5319972ad7dfdab0ff&auto=format&fit=crop&w=1053&q=80);
+			background-size: cover;
+			background-position: center center;
+			background-attachment: fixed;
+		}
+
+		.footer-class {
+			/*background-image: url(https://images.unsplash.com/photo-1500486884074-db879aa1ccbc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8f7c31c91c44ba49d60332bff9b7f2b6&auto=format&fit=crop&w=500&q=60);*/
+			background-color: rgba(100,100,100,0.5);
+			background-position: center center;
+			background-attachment: fixed;
+		}
+
+		.product-class {
+			height: 55vh;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		#scrollToTop {
+			position: fixed;
+			right: 5px;
+			bottom: 5px;
+			background-color: rgba(255,255,255,0.2);
+			border: none;
+			z-index: 1;
+		}
+
+		/*section {
+			min-height: 100vh;
+			position: center center;
+		}*/
+
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+<body>
+<button id="scrollToTop" type="button" class="btn btn-light" onclick="location.href='#'"><div><i class="fas fa-chevron-circle-up"></i><br>TOP</div></button>
+	
+
+
+<header class="header-class d-flex justify-content-center align-items-center">
+	<div class="text-center text-white">
+		<h1>茶行</h1>
+		<h2 style="font-family: 'Josefin Sans', sans-serif;">Yu Tea shop</h2>
+		<p style="font-family: 'Josefin Sans', sans-serif;">Good tea, good day.</p>	
+		<div class="mt-3">
+			<a href="#begin-cut" class="btn btn-outline-info">More</a>
+		</div>
+	</div>
+</header>
+
+<!-- Nav Bar start -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgba(0,0,0,.9);">
+  <a class="navbar-brand" href="#">YuTea</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#ourstory-cut">Our Story</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#product-cut">Product</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Nav Bar end -->
+
+<section class="py-5 text-center" id="begin-cut">
+	<div class="container">
+		<h2>ABOUT US</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, asperiores.</p>
+		<div class="row py-3">
+			<div class="col-md-6" >
+				<img class="img-fluid" src="https://images.unsplash.com/photo-1513043028889-1f8931021ad0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=20b891d3e5e6ca2c4e34ef1381f43fac&auto=format&fit=crop&w=640&q=80">
+			</div>
+			<div class="col-md-6">
+				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, consectetur!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia rerum voluptatem, nulla nobis eos adipisci dolor dolores maxime, repellendus harum facere aut sapiente, animi iusto alias deleniti nam at.</p>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<hr>
+
+<section class="py-5 text-center" id="ourstory-cut">
+	<div class="container">
+		<h2>OUR STORY</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati vel, et hic. Magni delectus tempore iste, neque minus in! At praesentium sunt dolore quas similique temporibus vel excepturi nostrum facere.</p>
+		<div class="row py-3">
+			<div class="col-md-6">
+				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laudantium nisi ipsa eius quam suscipit laboriosam, sequi dolore quaerat. Tempora deserunt provident voluptatem nesciunt dolore ab quae mollitia ea. Distinctio iste libero eligendi, dolor voluptatum minus, sapiente iusto voluptates nobis vel dolore, blanditiis veniam sint sit ratione enim! Accusantium aliquam culpa magni mollitia, blanditiis dolores voluptates reprehenderit aut ipsa enim.</p>
+			</div>
+			<div class="col-md-6" >
+				<img class="img-fluid" src="https://images.unsplash.com/photo-1531970227416-f0cddeb1f748?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f5edb087e6a25eff0037c49c110f7298&auto=format&fit=crop&w=1050&q=80">
+			</div>
+		</div>
+	</div>
+</section>
+
+<hr>
+
+<section class="py-5 text-center" id="product-cut">
+	<div class="container">
+		<h2>Product</h2>
+		<nav>
+		  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+		    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Black Tea</a>
+		    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Green Tea</a>
+		    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Oolong tea</a>
+		  </div>
+		</nav>
+		<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				<div>
+					<img class="product-class" src="https://images.unsplash.com/photo-1504382103100-db7e92322d39?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=21b2e96cd51c4ca831a1c2174abaef09&auto=format&fit=crop&w=634&q=80">
+				</div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae officiis alias corrupti mollitia fugiat deleniti! Quasi, commodi? Quaerat architecto eius, corrupti sapiente officiis tenetur. Facilis consequatur quae quaerat modi delectus repudiandae veniam vero nostrum dolores aut odio, labore! Sequi iste, minus delectus ipsa incidunt laudantium voluptates mollitia aliquid eos, ullam explicabo aliquam et cumque repellendus.
+			</div>
+			<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<div>
+					<img class="product-class" src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1e121bd81d48a279e258379cfd3f0473&auto=format&fit=crop&w=632&q=80">
+				</div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsum aliquid rerum molestiae eum saepe dolorem quaerat. Natus voluptatem praesentium nulla dolorem a consequatur ratione voluptatibus hic dolor illum quaerat recusandae accusantium numquam cum, consequuntur dignissimos, incidunt ipsum tempore consectetur corporis maiores dolorum aliquam non. Nisi ea error eos iure libero sed consequatur, aspernatur quasi, nobis ab cupiditate aliquid, dolore odio. Dolorem earum vero quisquam impedit.
+			</div>
+			<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				<div>
+					<img class="product-class" src="https://images.unsplash.com/photo-1476011912121-9c8aac18c5ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5381d0f9b6e87f5eeb97d33ca09e8e5&auto=format&fit=crop&w=634&q=80">
+				</div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum debitis illo tempora? Temporibus ea, et blanditiis aliquam voluptate, laudantium nemo quasi eaque culpa in labore, quibusdam qui explicabo deleniti! Consectetur beatae quidem eos sint cum distinctio odio ipsam sed mollitia, quisquam blanditiis deserunt reiciendis quo dignissimos voluptas ut. Doloremque distinctio nihil magni a qui aspernatur cupiditate error nisi sed repudiandae atque placeat, dolore delectus, ducimus, corrupti cumque.
+			</div>
+		</div>
+	</div>
+</section>
+
+<hr>
+
+<!-- 垂直排版 目前不需要 -->
+<!-- <section class="py-5 text-center" id="product-cut">
+	<div class="container">
+		<h2>CONTACT US</h2>
+		<div class="row">
+			<div class="col-md-3">1</div>
+			<div class="col-md-3">2</div>
+			<div class="col-md-3">3</div>
+			<div class="col-md-3">4</div>
+		</div>
+	</div>
+</section> -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- footer start -->
+<section class="py-3 footer-class">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<p>Lorem ipsum dolor sit.</p>
+				<hr>
+			</div>
+			<div class="col-md-4">
+				<p>Lorem ipsum dolor sit.</p>
+				<hr>
+			</div>
+			<div class="col-md-4">
+				<p>Lorem ipsum dolor.</p>
+				<hr>
+			</div>
+		</div>
+		<div class="container text-center">
+			<ul class="list-inline">
+				<li>
+					<i class="fas fa-phone-square p-2"></i>05-7542156
+				</li>
+				<li>
+					<i class="fas fa-envelope-open p-2"></i>thisisourteamail@gmail.com
+				</li>
+				<li>
+					<i class="fas fa-map-marked-alt p-2"></i>5th Floor, No. 123, Section 1, Minzu Road, Minxiong Township, Chiayi County	
+				</li>
+			</ul>
+			<p>2018 copyright©茶行</p>
+
+		</div>
+	</div>
+</section>
+<!-- footer end -->
+
+
+<!-- <div class="fab-fixed-wrap with-navbar-bottom" style="bottom: 4.6875rem;position: fixed;z-index: 1035;right: .9375rem;bottom: .9375rem;">
+  <a href="#top" target="_blank" class="fab fab-facebook mp-click" data-toggle="tooltip" data-placement="left" title="scrollToTop">
+    <svg xmlns="http://www.w3.org/2000/svg" focusable="false" width="32" height="32" fill="none" stroke="currentcolor" stroke-width="2" class="text-primary" viewBox="0 0 32 32" stroke-linecap="round" stroke-linejoin="round"><title>Lightning icon</title><path d="M18 13l8-11L8 13l6 6-8 11 18-11z"></path></svg>
+  </a>
+</div> -->
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- 
+Good free pic web:
+https://unsplash.com/
+Good other pepole demo web:
+http://shop.wangtea.com.tw/home/web_link
+Good icon web:
+https://fontawesome.com/
+ -->
