@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="myForm.css">
+	<title>Tomato Timer Simple Version</title>
+</head>
+<body>
+<h1>Tomato Timer</h1>
+<hr>
+<div align="center" >
+<form id="box">
+	<input type="button" name="startButton" value="Start" onClick="go(this.form)">
+	
+	<input type="button" name="resetButton" value="Reset" onClick="goReset(this.form)">
+	<!--<p>經過時間：<input type=text name="timeDisplay" value="00:00:00">秒-->
+	<p><input type="button" name="count" value="25:00" id="count" disabled>
+	<br><br>
+	<hr>
+	One tomato time: <input type="text" name="oneTomatoTimeValue" value="25" id="Save" size="2" autofocus="on"> min
+	<input type="button" name="" onclick="setOneTomatoTime(this.form)" value="Save" style="margin-left: 10pt">
+</form>
+<hr>
+</div>
+
+<table align="center">
+	<tr><td><input type="button" name="NewList" value="+ New" onClick="addList();" style="border: 0; background-color: gray; color: white;"></td></tr>
+</table>
+
+<div id="TodoList" align="center">
+	<p>To do List</p>
+</div>
+
+<div id="TodoListDone" align="center">
+	<p>Done List</p>
+</div>
+
+<hr>
+
+<div align="center">
+	<p style="color: gray; font-size: 7pt;">
+	Version 1.2.4
+	<br> 
+	Date: 2017/08/21
+	<br>
+	Author: hy.
+	<div align="center">
+	<table align="center" border="0">
+	<tr><th align="left">
+	<p style="color: gray; font-size: 5pt;">
+	2017/08/21 版本* 首次成功基本計時之功能。 v1.0 <br>
+	2017/08/22 新增* 可以動態自行增加to do list，並可做刪除。 v1.1 <br>
+	2017/08/24 新增* 動態顯示時間倒數在標題上。 <br>
+	<span style="margin: 31pt;">新增* 時間結束時，可以加入完成事項。<br>
+	<span style="margin: 31pt;">新增* 代辦事項打勾後，可以自動將事項移至完成事項中。v1.2 <br>
+	2017/08/26 修正* 修正時間計算時操作的錯誤。 v1.2.1 <br>
+	2017/09/03 修正* 修正時間完成時音效播放與彈出視窗。 v1.2.2 <br>
+	2017/09/13 修正* 部分錯誤修正。 v1.2.3 <br>
+	2019/02/20 修正* 結束音樂更換為免費音效。 v1.2.4 <br>
+	</p>
+	</th></tr>
+	</table>
+	</div>
+	</p>
+</div>
+
+<!-- [測試用] 與.js檔有function相關，需打開才可測試 -->
+<!-- <button id="load">Notify me!</button>
+<button onclick="notifyMe()">Notify me!</button> -->
+
+<audio id="bgMusic">
+    <source = src="clapping_bravo.mp3" type="audio/mp3">    
+</audio>
+<script type="text/javascript" src="tomato.js"></script>
+</body>
+</html>
