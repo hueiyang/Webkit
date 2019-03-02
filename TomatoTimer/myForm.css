@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1{
 	font: 36pt;
 	text-align: center;
@@ -26,4 +27,34 @@ div.mainContain{
 	border: 0; 
 	background-color:#fafafa;
 	color: black;
+=======
+h1{
+	font: 36pt;
+	text-align: center;
+}
+
+div.mainContain{
+	padding: 25px;
+}
+
+#box{
+	border:2px gray dashed;
+	padding:6px;
+	width:450px;
+	background-color:#fafafa;
+	align-content: center;
+	padding: 25px; 
+}
+
+#Save{
+	text-align: center;
+}
+
+#count{
+	background-color:white; 
+	font-size: 300%; 
+	border: 0; 
+	background-color:#fafafa;
+	color: black;
+>>>>>>> 058a5fb3cb72d2c2b467764b7c2e503b559c051f
 }
